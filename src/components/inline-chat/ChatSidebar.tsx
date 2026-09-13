@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  MessageSquarePlus, 
+  MessageSquare, 
   ChevronDown, 
   ChevronRight, 
   Home, 
@@ -37,7 +37,7 @@ export const ChatSidebar: React.FC<ChatSidebarProps> = ({
       {/* New Chat Button */}
       <div className="compose-button-wrapper">
         <button className="compose-btn" onClick={onNewChat}>
-          <MessageSquarePlus size={20} strokeWidth={2.2} />
+          <MessageSquare size={20} strokeWidth={2} />
           <span>New Chat</span>
         </button>
       </div>
