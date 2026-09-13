@@ -1,0 +1,35 @@
+import React from 'react';
+
+interface SparkleIconProps {
+  size?: number;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+export const SparkleIcon: React.FC<SparkleIconProps> = ({
+  size = 14,
+  color = 'currentColor',
+  className,
+  style,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={style}
+  >
+    <path
+      d="M7 1.3125L8.05 5.075L11.8125 6.125L8.05 7.175L7 10.9375L5.95 7.175L2.1875 6.125L5.95 5.075L7 1.3125Z"
+      fill={color}
+    />
+    <path
+      opacity="0.6"
+      d="M10.9375 1.75L11.4625 3.4125L13.125 3.9375L11.4625 4.4625L10.9375 6.125L10.4125 4.4625L8.75 3.9375L10.4125 3.4125L10.9375 1.75Z"
+      fill={color}
+    />
+  </svg>
+);
